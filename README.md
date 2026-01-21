@@ -125,3 +125,6 @@ Unauthorized reproduction or commercial use is not permitted.
 **Author:** Andrew Lim Kim Sheng  
 **Institution:** University College of Technology Sarawak (UTS)
 
+## License
+[MIT License](LICENSE)
+
