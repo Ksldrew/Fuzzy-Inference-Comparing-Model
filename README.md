@@ -35,7 +35,7 @@ While effective for low-dimensional data, this approach suffers from **exponenti
 ---
 
 ### Modular TSK-FIS (Proposed Architecture)
-![Modular TSK-FIS Architecture](FYP2/Day4/runs/tskfis_70_30_20251120_104942.png)
+![Modular TSK-FIS Architecture](Modular TSK-FIS Model Architecture.png)
 
 The Modular TSK-FIS decomposes the input features into **semantically meaningful modules** (e.g., demographic, metabolic, blood pressure).  
 Each module builds an independent local TSK-FIS, and the outputs are aggregated to produce the final CVD risk score.
