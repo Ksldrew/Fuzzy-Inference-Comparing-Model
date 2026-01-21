@@ -120,11 +120,10 @@ The code and report are shared **for learning, evaluation, and recruitment purpo
 Unauthorized reproduction or commercial use is not permitted.
 
 ---
-## License
-MIT License.
----
 
 ## 📬 Contact
 **Author:** Andrew Lim Kim Sheng  
 **Institution:** University College of Technology Sarawak (UTS)
 
+## License
+MIT License.
