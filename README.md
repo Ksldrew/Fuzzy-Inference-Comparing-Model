@@ -14,7 +14,7 @@ The project is developed as part of a **Final Year Project (FYP)** with the obje
 ## 📄 Final Year Project Report
 The complete FYP report (methodology, equations, experiments, and analysis) is available here:
 
-👉 **View / Download FYP Report (PDF)**  
+👉 **View Report (PDF)**  
 https://drive.google.com/file/d/1IKvImOr6lrt6jH75jyhNsbo-4mLMf58J/view?usp=drive_link
 
 **Author:** Andrew Lim Kim Sheng  
@@ -35,7 +35,7 @@ While effective for low-dimensional data, this approach suffers from **exponenti
 ---
 
 ### Modular TSK-FIS (Proposed Architecture)
-![Modular TSK-FIS Architecture](Modular TSK-FIS Model Architecture.png)
+![Modular TSK-FIS Architecture](Modular_TSK-FIS_Model_Architecture.png)
 
 The Modular TSK-FIS decomposes the input features into **semantically meaningful modules** (e.g., demographic, metabolic, blood pressure).  
 Each module builds an independent local TSK-FIS, and the outputs are aggregated to produce the final CVD risk score.
@@ -111,13 +111,6 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
-
-### 4. Run experiments
-```bash
-python main.py
-```
-
-(Refer to individual experiment folders for specific scripts.)
 
 ---
 
