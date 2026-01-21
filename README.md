@@ -14,7 +14,7 @@ The project is developed as part of a **Final Year Project (FYP)** with the obje
 ## 📄 Final Year Project Report
 The complete FYP report (methodology, equations, experiments, and analysis) is available here:
 
-👉 **View / Download FYP Report (PDF)**  
+👉 **View Report (PDF)**  
 https://drive.google.com/file/d/1IKvImOr6lrt6jH75jyhNsbo-4mLMf58J/view?usp=drive_link
 
 **Author:** Andrew Lim Kim Sheng  
