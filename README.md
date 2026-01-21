@@ -119,9 +119,9 @@ This repository and accompanying report are part of an academic Final Year Proje
 The code and report are shared **for learning, evaluation, and recruitment purposes only**.  
 Unauthorized reproduction or commercial use is not permitted.
 
+---
 ## License
-This project is licensed under the MIT License.
-
+MIT License.
 ---
 
 ## 📬 Contact
