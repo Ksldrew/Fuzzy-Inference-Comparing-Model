@@ -1,0 +1,40 @@
+{
+  "model_type": "Traditional (Monolithic) TSK-FIS",
+  "features": [
+    "age_years",
+    "gender",
+    "height",
+    "weight",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol",
+    "gluc",
+    "smoke",
+    "alco",
+    "active"
+  ],
+  "use_zscore": true,
+  "num_rules": 120,
+  "grid_partition_estimated_rules_if_used": 288000,
+  "ridge_alpha": 1.0,
+  "threshold": 0.5,
+  "probability_mapping": "sigmoid(score)",
+  "test_auc": 0.7451232365028255,
+  "test_confusion_matrix": [
+    [
+      16,
+      5237
+    ],
+    [
+      5,
+      5242
+    ]
+  ],
+  "outputs": {
+    "surfaces_2d": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\feature_11\\without_grid\\traditional_tskfis_cpu_11feat_kmeansrules\\figures\\surfaces_2d",
+    "surfaces_2d_slices": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\feature_11\\without_grid\\traditional_tskfis_cpu_11feat_kmeansrules\\figures\\surfaces_2d_slices",
+    "surfaces_3d": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\feature_11\\without_grid\\traditional_tskfis_cpu_11feat_kmeansrules\\figures\\surfaces_3d",
+    "explain_json": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\feature_11\\without_grid\\traditional_tskfis_cpu_11feat_kmeansrules\\step1to5_explain",
+    "exports": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\feature_11\\without_grid\\traditional_tskfis_cpu_11feat_kmeansrules\\exports"
+  }
+}

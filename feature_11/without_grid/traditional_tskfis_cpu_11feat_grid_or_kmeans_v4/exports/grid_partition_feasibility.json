@@ -1,0 +1,8 @@
+{
+  "use_grid_partition_requested": true,
+  "estimated_grid_rules": 288000,
+  "estimated_firing_matrix_gb_test_only": 22.530555725097656,
+  "max_grid_rules_allowed": 5000,
+  "note": "Grid-partition rule explosion increases RAM/time; for 11 features it is usually infeasible on CPU.",
+  "live_ram_before": {}
+}

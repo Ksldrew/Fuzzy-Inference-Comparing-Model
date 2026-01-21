@@ -1,0 +1,41 @@
+{
+  "features": [
+    "age_years",
+    "cholesterol",
+    "ap_hi",
+    "ap_lo"
+  ],
+  "modules": [
+    [
+      "Module1_AgeChol",
+      [
+        "age_years",
+        "cholesterol"
+      ]
+    ],
+    [
+      "Module2_BP",
+      [
+        "ap_hi",
+        "ap_lo"
+      ]
+    ]
+  ],
+  "feature_mf_num": {
+    "age_years": 5,
+    "ap_hi": 5,
+    "ap_lo": 5,
+    "cholesterol": 3
+  },
+  "train_path": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\Edited_Dataset\\train.csv",
+  "val_path": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\Edited_Dataset\\val.csv",
+  "test_path": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\Edited_Dataset\\test.csv",
+  "threshold": 0.5,
+  "epochs": 120,
+  "batch_size": 512,
+  "lr": 0.002,
+  "weight_decay": 0.0001,
+  "patience": 30,
+  "lambda_aux": 0.2,
+  "lambda_gate": 0.05
+}

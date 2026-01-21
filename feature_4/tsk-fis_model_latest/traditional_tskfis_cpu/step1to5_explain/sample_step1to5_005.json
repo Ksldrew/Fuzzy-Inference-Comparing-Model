@@ -1,0 +1,173 @@
+{
+  "row_index": 5,
+  "x_original": {
+    "ap_hi": 130.0,
+    "ap_lo": 80.0,
+    "age_years": 60.0,
+    "cholesterol": 1.0
+  },
+  "x_model_space": {
+    "ap_hi": 130.0,
+    "ap_lo": 80.0,
+    "age_years": 60.0,
+    "cholesterol": 1.0
+  },
+  "y_true": 1,
+  "score": 0.6024321696236443,
+  "probability": 0.6462125509758652,
+  "step3_membership_mu": {
+    "ap_hi": [
+      0.9831304383393562,
+      0.0018624316620352288,
+      5.801621668615557e-18
+    ],
+    "ap_lo": [
+      0.9914454548613411,
+      4.046410479989737e-26,
+      7.00655755237782e-11
+    ],
+    "age_years": [
+      1.0541234298533405e-09,
+      0.000993171463257099,
+      0.9852317023592979
+    ],
+    "cholesterol": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  "step4_top_rules": [
+    {
+      "rule_id": 6,
+      "mf_indices": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "firing": 0.9603252465290493,
+      "norm_firing": 0.9971040521197125,
+      "rule_output": 0.6025235480660083,
+      "weighted_contribution": 0.6007786712741633
+    },
+    {
+      "rule_id": 33,
+      "mf_indices": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "firing": 0.0018192297534888459,
+      "norm_firing": 0.0018889031247452503,
+      "rule_output": 0.5517667458891529,
+      "weighted_contribution": 0.0010422339304405393
+    },
+    {
+      "rule_id": 3,
+      "mf_indices": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "firing": 0.0009680642918960465,
+      "norm_firing": 0.001005139489616396,
+      "rule_output": 0.6071392739006813,
+      "weighted_contribution": 0.0006102596598946
+    },
+    {
+      "rule_id": 30,
+      "mf_indices": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "firing": 1.8338905172729163e-06,
+      "norm_firing": 1.904125370571966e-06,
+      "rule_output": 0.5274182953420263,
+      "weighted_contribution": 1.0042705570645705e-06
+    },
+    {
+      "rule_id": 0,
+      "mf_indices": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "firing": 1.027475405249177e-09,
+      "norm_firing": 1.066825946449079e-09,
+      "rule_output": 0.6871619255041259,
+      "weighted_contribution": 7.330821715397106e-10
+    },
+    {
+      "rule_id": 24,
+      "mf_indices": [
+        0,
+        2,
+        2,
+        0
+      ],
+      "firing": 6.786630647016511e-11,
+      "norm_firing": 7.046546930676046e-11,
+      "rule_output": -3.473473266235059,
+      "weighted_contribution": -2.447599238297396e-10
+    },
+    {
+      "rule_id": 27,
+      "mf_indices": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "firing": 1.9464382874065885e-12,
+      "norm_firing": 2.0209835267674125e-12,
+      "rule_output": 0.510925089877639,
+      "weighted_contribution": 1.032571190054868e-12
+    },
+    {
+      "rule_id": 51,
+      "mf_indices": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "firing": 1.2856519646459407e-13,
+      "norm_firing": 1.334890224116751e-13,
+      "rule_output": -3.388236860793479,
+      "weighted_contribution": -4.5229242624652445e-13
+    },
+    {
+      "rule_id": 21,
+      "mf_indices": [
+        0,
+        2,
+        1,
+        0
+      ],
+      "firing": 6.841322578376379e-14,
+      "norm_firing": 7.103333468960113e-14,
+      "rule_output": -4.418987826218164,
+      "weighted_contribution": -3.138954412490278e-13
+    },
+    {
+      "rule_id": 48,
+      "mf_indices": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "firing": 1.2960127449300434e-16,
+      "norm_firing": 1.345647804469595e-16,
+      "rule_output": 1.666781476261034,
+      "weighted_contribution": 2.242900834061251e-16
+    }
+  ],
+  "step5_final_output": 0.6024321696236443
+}

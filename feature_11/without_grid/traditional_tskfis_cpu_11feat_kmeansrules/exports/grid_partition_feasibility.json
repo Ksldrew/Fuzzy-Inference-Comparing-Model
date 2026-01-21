@@ -1,0 +1,27 @@
+{
+  "grid_partition_estimated_rules": 288000,
+  "assumed_dtype": "<class 'numpy.float32'>",
+  "dtype_bytes": 4,
+  "example_batch_sizes": [
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "estimated_memory_gb_for_batch_times_rules_single_matrix": {
+    "64": 0.06866455078125,
+    "128": 0.1373291015625,
+    "256": 0.274658203125,
+    "512": 0.54931640625,
+    "1024": 1.0986328125
+  },
+  "estimated_memory_gb_for_batch_times_rules_three_matrices": {
+    "64": 0.20599365234375,
+    "128": 0.4119873046875,
+    "256": 0.823974609375,
+    "512": 1.64794921875,
+    "1024": 3.2958984375
+  },
+  "note": "This is an estimation for classic grid-partition inference/aggregation. Actual peak can be higher due to temporaries and Python overhead."
+}

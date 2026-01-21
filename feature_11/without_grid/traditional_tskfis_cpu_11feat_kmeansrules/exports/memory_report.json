@@ -1,0 +1,151 @@
+{
+  "model_type": "Traditional (Monolithic) TSK-FIS",
+  "rule_generation": "KMeans (K rules) \u2014 avoids grid-partition explosion",
+  "features": [
+    "age_years",
+    "gender",
+    "height",
+    "weight",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol",
+    "gluc",
+    "smoke",
+    "alco",
+    "active"
+  ],
+  "num_rules_kmeans": 120,
+  "grid_partition_estimated_rules_if_used": 288000,
+  "dtype_large_mats": "<class 'numpy.float32'>",
+  "rule_chunk": 40,
+  "ridge_alpha": 1.0,
+  "threshold": 0.5,
+  "test_auc": 0.7451232365028255,
+  "test_confusion_matrix": [
+    [
+      16,
+      5237
+    ],
+    [
+      5,
+      5242
+    ]
+  ],
+  "tracemalloc_final_current_gb": 0.05401064921170473,
+  "tracemalloc_peak_gb": 0.2722611604258418,
+  "rss_gb_if_available": null,
+  "runtime_memory_log": [
+    {
+      "time": "2025-12-18 20:43:42",
+      "tag": "start",
+      "tracemalloc_current_gb": 1.4901161193847656e-07,
+      "tracemalloc_peak_gb": 1.4901161193847656e-07,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:43:42",
+      "tag": "after_load_data",
+      "tracemalloc_current_gb": 0.006308352574706078,
+      "tracemalloc_peak_gb": 0.019775853492319584,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:43:42",
+      "tag": "after_scaling",
+      "tracemalloc_current_gb": 0.009194497019052505,
+      "tracemalloc_peak_gb": 0.019775853492319584,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:43:44",
+      "tag": "after_kmeans_rules",
+      "tracemalloc_current_gb": 0.009399131871759892,
+      "tracemalloc_peak_gb": 0.019775853492319584,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:43:44",
+      "tag": "after_firing_train",
+      "tracemalloc_current_gb": 0.03130423929542303,
+      "tracemalloc_peak_gb": 0.2722611604258418,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:43:45",
+      "tag": "after_train_consequents",
+      "tracemalloc_current_gb": 0.03134123235940933,
+      "tracemalloc_peak_gb": 0.2722611604258418,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:43:45",
+      "tag": "after_inference_val_test",
+      "tracemalloc_current_gb": 0.040917810052633286,
+      "tracemalloc_peak_gb": 0.2722611604258418,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:43:47",
+      "tag": "after_metrics_plots",
+      "tracemalloc_current_gb": 0.043835789896547794,
+      "tracemalloc_peak_gb": 0.2722611604258418,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:43:54",
+      "tag": "after_2d_single_curves",
+      "tracemalloc_current_gb": 0.04594965744763613,
+      "tracemalloc_peak_gb": 0.2722611604258418,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:44:59",
+      "tag": "after_2d_slices_and_3d_for_same_pairs",
+      "tracemalloc_current_gb": 0.0461248978972435,
+      "tracemalloc_peak_gb": 0.2722611604258418,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:45:47",
+      "tag": "after_additional_3d_surfaces",
+      "tracemalloc_current_gb": 0.053984236903488636,
+      "tracemalloc_peak_gb": 0.2722611604258418,
+      "rss_gb": null
+    },
+    {
+      "time": "2025-12-18 20:45:47",
+      "tag": "after_explain_exports",
+      "tracemalloc_current_gb": 0.054010593332350254,
+      "tracemalloc_peak_gb": 0.2722611604258418,
+      "rss_gb": null
+    }
+  ],
+  "grid_partition_memory_estimation": {
+    "grid_partition_estimated_rules": 288000,
+    "assumed_dtype": "<class 'numpy.float32'>",
+    "dtype_bytes": 4,
+    "example_batch_sizes": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "estimated_memory_gb_for_batch_times_rules_single_matrix": {
+      "64": 0.06866455078125,
+      "128": 0.1373291015625,
+      "256": 0.274658203125,
+      "512": 0.54931640625,
+      "1024": 1.0986328125
+    },
+    "estimated_memory_gb_for_batch_times_rules_three_matrices": {
+      "64": 0.20599365234375,
+      "128": 0.4119873046875,
+      "256": 0.823974609375,
+      "512": 1.64794921875,
+      "1024": 3.2958984375
+    },
+    "note": "This is an estimation for classic grid-partition inference/aggregation. Actual peak can be higher due to temporaries and Python overhead."
+  },
+  "interpretation_note": "If grid-partition is used with high-dimensional MF counts, R becomes very large and the aggregation stage requires large (batch_size \u00d7 R) matrices. This is the dimension trap."
+}

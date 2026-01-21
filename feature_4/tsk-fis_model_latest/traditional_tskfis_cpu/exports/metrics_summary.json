@@ -1,0 +1,28 @@
+{
+  "model_type": "Traditional (Monolithic) TSK-FIS",
+  "use_zscore": false,
+  "features": [
+    "ap_hi",
+    "ap_lo",
+    "age_years",
+    "cholesterol"
+  ],
+  "mf_per_feature": 3,
+  "num_rules": 81,
+  "test_auc": 0.7836118477099909,
+  "test_confusion_matrix": [
+    [
+      431,
+      4822
+    ],
+    [
+      70,
+      5177
+    ]
+  ],
+  "threshold": 0.5,
+  "probability_mapping": "sigmoid(score)",
+  "notes": {
+    "why_zscore_optional": "KMeans is applied per feature (1D), so global feature scaling is optional. Use z-score if you want numerical stability and comparable parameter ranges; disable it if your report defines z-score only for the modular model."
+  }
+}

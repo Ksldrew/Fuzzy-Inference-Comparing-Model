@@ -1,0 +1,60 @@
+{
+  "test_loss": 0.5710671049413227,
+  "test_acc": 0.722,
+  "test_auc": 0.7795830391382259,
+  "confusion_matrix": [
+    [
+      3917,
+      1336
+    ],
+    [
+      1583,
+      3664
+    ]
+  ],
+  "pos_weight_used": 1.001225239942822,
+  "features": [
+    "age_years",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol"
+  ],
+  "feature_mf_num_inferred": {
+    "age_years": 3,
+    "ap_hi": 3,
+    "ap_lo": 3,
+    "cholesterol": 3
+  },
+  "modules": [
+    {
+      "name": "Bio-Demographics",
+      "features": [
+        "age_years"
+      ]
+    },
+    {
+      "name": "Blood Pressure",
+      "features": [
+        "ap_hi",
+        "ap_lo"
+      ]
+    },
+    {
+      "name": "Metabolic",
+      "features": [
+        "cholesterol"
+      ]
+    }
+  ],
+  "weight_mode": "raw",
+  "module_weights_snapshot": [
+    1.3107572793960571,
+    1.8048944473266602,
+    1.2699589729309082
+  ],
+  "data_paths": {
+    "train": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\Edited_Dataset\\train.csv",
+    "val": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\Edited_Dataset\\val.csv",
+    "test": "C:\\Users\\asus\\Desktop\\FYP Improvement\\FYP2\\Edited_Dataset\\test.csv"
+  }
+}
