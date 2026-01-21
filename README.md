@@ -126,4 +126,5 @@ Unauthorized reproduction or commercial use is not permitted.
 **Institution:** University College of Technology Sarawak (UTS)
 
 ## License
-MIT License.
+[MIT License](LICENSE)
+
